@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hongyu Wang Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />   -->
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Serif+Pro:400,200&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Hongyu Wang</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Data/Business Analyst</p>
+            <img src="img/hongyu.jpg" alt="a picture of Hongyu smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Data Mining</h3>
+                    <p>Manipulating (SQL/Python/R/Excel) and Visualizing (Python/R/Tableau) large data sets to identify trends, patterns, and relationships. Mining and evaluating historical data for insights on how to plan for the future.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Data Modling</h3>
+                    <p>Applying machine learning and statistical techniques to build descriptive and predictive models to generate useful insights to help companies tailor marketing strategies and anticipate the likelihood of future events. (Python) </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Business Development</h3>
+                    <p>Exploring and Suggesting possible actions to take based on the results of data mining and data modeling along with business rules. Optimizing decision making by recommending multiple possible responses to different scenarios and tradeoffs.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2> 
+           <p class="section__subtitle section__subtitle--about" style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Actively seeking a full-time data/business analyst position</p>
+           
+           <div class="about-me__body">
+               <ul>
+                  <li>Graduated from <b>Boston University</b> on 01/25/2021.</li>
+                  <li><b>Data Analytics</b> and <b>Business Analytics</b> master's degrees.</li>
+                  <li><b>Data Munipulator</b> & <b>Visualizer</b> </li>
+                  <li>Good at <b>Marketing Analytics</b>,<b> E-Commerce Analytics</b></li>
+                  <li> Passionate about <b>machine learning</b>. </li>
+                  <li>Proficient with <b>Python</b>, <b>R</b>, <b>SQL</b>, <b>Tableau</b>, and <b>Excel</b>.</li>
+                  <li>CFA Level I Passed</li>
+                  <li>Fluent in English and Mandarin</li>
+                  <li>Owner of a cat. </li>
+                  <li>Interested in music, hiking, traveling, and tea art. </li>
+                </ul> 
+           </div>
+           
+           <img src="img/hongyu02.jpg" alt="hongyu holding her cat" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Portfolio</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+                   
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> show all</button>
+              <button class="btn" onclick="filterSelection('python_r')"> python/r</button>
+              <button class="btn" onclick="filterSelection('sql')"> statistics</button>
+              <button class="btn" onclick="filterSelection('tableau')"> data viz</button>
+              <button class="btn" onclick="filterSelection('neural_network')"> neural network</button>
+            
+            </div>
+                
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+              <div class="column python_r">
+                <div class="content">
+                  <a href="https://github.com/oliviawl/Customer_Segmentation" class="portfolio__item">
+                        <img src="img/customer_seg.jpg" alt="" class="portfolio__img" style="width:100%" >
+                  </a>
+                  <h4>Customer Segmentation</h4>
+                  <ul class = "item" >
+                      <li></li>
+                      <li>Tea</li>
+                      <li>Milk</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="column python_r">
+                <div class="content">
+                  <a href="https://github.com/oliviawl/hotel_booking_demand_analysis_R" class="portfolio__item">
+                        <img src="img/hotel.jpg" alt="" class="portfolio__img" style="width:100%" >
+                  </a>
+                  <h4>Hotel Demand Analysis</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              
+              <div class="column neural_network">
+                <div class="content">
+                    <a href="https://github.com/oliviawl/image_classification_utkface" class="portfolio__item">
+                        <img src="img/face_prediction.jpg" alt="" class="portfolio__img" style="width:100%" >
+                    </a>
+                  <h4>Image Classification</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+             </div>
+        
+        </div>
+    </section>
+    
+
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:oliviawl@bu.edu" class="footer__link">oliviawl@bu.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href = "mailto: oliviawl@bu.edu">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/redrain1616/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="weixin://contacts/profile/15728044328">
+                    <i class="fa fa-wechat"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/oliviawl">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
